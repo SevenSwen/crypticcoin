@@ -128,7 +128,7 @@ public:
             0x1f07ffff, 4, 0);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x000095aa3b6953c0757dbd0c6ba828fefab484a15eec5ea6c3d2776e6ea4b38c"));
-        assert(genesis.hashMerkleRoot == uint256S("0x1927ef984ff76fead7fb8b0304d0973326fb33289de1fa97e9b3d823e14fd8cb "));
+        assert(genesis.hashMerkleRoot == uint256S("0x1927ef984ff76fead7fb8b0304d0973326fb33289de1fa97e9b3d823e14fd8cb"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -249,7 +249,7 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
